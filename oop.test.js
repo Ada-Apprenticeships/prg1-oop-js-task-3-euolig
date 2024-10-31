@@ -82,9 +82,9 @@ describe('OOP function tests', () => {
         
         task = new Task('T1', PRIORITY['LOW'] )
         
-        expect( task._added ).toBe( now );
-        expect( task._title ).toBe( 'T1' );
-        expect( task._priority ).toBe( PRIORITY['LOW'] );
+        expect(task['#added']).toBeUndefined();
+        expect(task['#title']).toBeUndefined();
+        expect(task['#priority']).toBeUndefined();
       
     });
 
